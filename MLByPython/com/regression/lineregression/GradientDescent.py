@@ -98,6 +98,12 @@ if __name__ == '__main__':
     print(theta)
     plt.figure(1)
     plt.plot(costJ)
+    plt.xlabel('iter')
+    plt.ylabel('cost')
+    
     preResult = predict(theta, testData)
     plt.figure(2)
     plt.scatter(testData[:, -1:], np.asarray(preResult))
+    plt.ylabel('predict')
+    plt.xlabel('real vale')
+    
